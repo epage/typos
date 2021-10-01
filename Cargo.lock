@@ -66,7 +66,7 @@ checksum = "a88b6bd5df287567ffdf4ddf4d33060048e1068308e5f62d81c6f9824a045a48"
 dependencies = [
  "bstr",
  "doc-comment",
- "predicates",
+ "predicates 1.0.8",
  "predicates-core",
  "predicates-tree",
  "wait-timeout",
@@ -74,13 +74,13 @@ dependencies = [
 
 [[package]]
 name = "assert_fs"
-version = "1.0.2"
+version = "1.0.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "73c485ca248200dfb850a64468a926321865cae0c450eaa7cdbe9ccf4ec49028"
+checksum = "7d7b349de9bde9383966c8d3be1103623620ca34d2c43a41b82360e552661007"
 dependencies = [
  "doc-comment",
  "globwalk",
- "predicates",
+ "predicates 2.0.2",
  "predicates-core",
  "predicates-tree",
  "tempfile",
@@ -999,6 +999,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "predicates"
+version = "2.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c143348f141cc87aab5b950021bac6145d0e5ae754b0591de23244cee42c9308"
+dependencies = [
+ "difflib",
+ "itertools 0.10.1",
+ "predicates-core",
+]
+
+[[package]]
 name = "predicates-core"
 version = "1.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1482,7 +1493,7 @@ dependencies = [
  "maplit",
  "once_cell",
  "phf 0.8.0",
- "predicates",
+ "predicates 1.0.8",
  "proc-exit",
  "serde",
  "serde_json",
