@@ -82,7 +82,7 @@ derive_setters = "0.1"
 itertools = "0.10"
 serde_json = "1.0"
 encoding = "0.2"
-kstring = "1.0"
+kstring = "2.0"
 typed-arena = "2.0.1"
 
 [dev-dependencies]
